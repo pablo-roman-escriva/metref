@@ -13,3 +13,8 @@ class Taxon(models.Model):
     rank = models.CharField(max_length=200, default='')
     version = models.ManyToManyField(Version)
 
+class Genome(models.Model):
+    accession = models.CharField(unique=True)
+    assembly_level = models.CharField 
+    taxon = models.ForeignKey(Taxon)
+    version = models.ManyToManyField(Version)
