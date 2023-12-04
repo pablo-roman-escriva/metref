@@ -16,5 +16,5 @@ class Taxon(models.Model):
 class Genome(models.Model):
     accession = models.CharField(unique=True)
     assembly_level = models.CharField 
-    taxon = models.ForeignKey(Taxon)
+    taxon = models.ForeignKey(Taxon, on_delete=set)
     version = models.ManyToManyField(Version)
