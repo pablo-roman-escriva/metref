@@ -14,7 +14,7 @@ from taxonomy.models import Version
 
 initial_version = Version.objects.get(pk=1)
 
-df = pd.read_csv("data/assembly_summary_refseq.txt", sep="\t", usecols=[0,4,5,11,19,20], header=None, names=["accession", "category", "taxid", "level", "path", "excluded"], dtype={'accession':str,'category':str,'taxid':str,'level':str,'excluded':str,'path':str}, skiprows=2)
+df = pd.read_csv("data/assembly_summary_refseq_dic_2023.txt", sep="\t", usecols=[0,4,5,11,19,20], header=None, names=["accession", "category", "taxid", "level", "path", "excluded"], dtype={'accession':str,'category':str,'taxid':str,'level':str,'excluded':str,'path':str}, skiprows=2)
 df = df[(df["category"] == "reference genome") | (df["category"] == "representative genome")]
 df = df[(df["excluded"] == "na")]
 df = df.drop("excluded", axis=1)
