@@ -9,8 +9,10 @@ import pandas as pd
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "metref.settings")
 django.setup()
 
+from django.core.files import File
 from taxonomy.models import Genome
 from taxonomy.models import Version
+from taxonomy.models import Taxon
 
 initial_version = Version.objects.get(pk=1)
 
@@ -24,3 +26,11 @@ df["path"] =df["path"].apply(lambda x: x + "/" + x.split("/")[-1] + "_genomic.fn
 #for ind in df.index:
 #    subprocess.run(["rsync", "-r", "--times", "--verbose", df['path'][ind].replace("https", "rsync"), "data/genomes/"])
 
+df["path"] = "data/genomes/"+df["path"].apply(lambda x: x.split("/")[-1])
+
+for ind in df.index:
+    with open (df["path"][ind], 'rb') as f:
+        g=Genome(accession=df["accession"][ind],taxon=Taxon.objects.get(pk=df["taxid"][ind]),assembly_level=df["level"][ind])
+        g.file = os.path.join('',df["path"][ind])
+        g.save()
+        g.version.add(initial_version)
