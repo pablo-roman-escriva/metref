@@ -15,6 +15,8 @@ class Taxon(models.Model):
 class Genome(models.Model):
     accession = models.CharField(unique=True)
     assembly_level = models.CharField(max_length=200, default='')
+    category = models.CharField(max_length=200, default='')
+    group = models.CharField(max_length=200, default='')
     file = models.FileField(upload_to="data/genomes",default="")
     taxon = models.ForeignKey(Taxon, on_delete=set)
     version = models.ManyToManyField(Version)
