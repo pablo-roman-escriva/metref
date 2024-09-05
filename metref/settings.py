@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -25,19 +26,27 @@ SECRET_KEY = 'django-insecure-t^%blrrl0f9%spd@y)n)ou&j90#fexnm+%80va15+-ks0d*h2l
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['147.156.207.135','.metrefdb.com','localhost']
 
 
 # Application definition
 
 INSTALLED_APPS = [
-    'taxonomy.apps.TaxonomyConfig',
+    'taxonomy',
+    'studies',
+    'faq',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_select2',
+    "dal",
+    "dal_select2",
+    "django_bootstrap5",
+    "django_celery_beat",
+    "tinymce"
 ]
 
 MIDDLEWARE = [
@@ -48,6 +57,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'metref.middleware.LoginRequiredMiddleware'
 ]
 
 ROOT_URLCONF = 'metref.urls'
@@ -55,7 +65,7 @@ ROOT_URLCONF = 'metref.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -110,7 +120,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'CET'
+TIME_ZONE = 'Europe/Madrid'
 
 USE_I18N = True
 
@@ -122,7 +132,65 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+import os
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+settings_dir = os.path.dirname(__file__)
+PROJECT_ROOT = os.path.abspath(os.path.dirname(settings_dir))
+
+LOGIN_URL = "/accounts/login/"
+LOGIN_EXEMPT_URLS = ["/accounts/logout/$","/accounts/register/"]
+LOGIN_REDIRECT_URL = "home"
+LOGOUT_REDIRECT_URL = "home" 
+
+CACHES = {
+    # … default cache config and others
+    "default": {
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": "redis://127.0.0.1:6379/2",
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        }
+    },
+    "select2": {
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": "redis://127.0.0.1:6379/2",
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        }
+    }
+}
+
+# Tell select2 which cache configuration to use:
+SELECT2_CACHE_BACKEND = "select2"
+
+CELERY_BROKER_URL = "redis://127.0.0.1:6379/0"
+CELERY_RESULT_BACKEND = "redis://127.0.0.1:6379/0"
+
+STATIC_R = 'r_plots'
+
+CELERY_BEAT_SCHEDULER="django_celery_beat.schedulers:DatabaseScheduler"
+
+DJANGO_CELERY_BEAT_TZ_AWARE = False
+
+TINYMCE_JS_URL = "https://cdn.tiny.cloud/1/5d4qvhno8kppf5aspnot5yr4hctnba8ffagct5k6hflobfah/tinymce/6/tinymce.min.js";
+
+TINYMCE_COMPRESSOR = False;
+
+TINYMCE_DEFAULT_CONFIG = {
+  "theme": "silver",
+  "resize": "false",
+  "menubar": "file edit view insert format tools table help",
+  "toolbar":
+    "undo redo | bold italic underline strikethrough | fontselect fontsizeselect formatselect | alignleft aligncenter alignright alignjustify | outdent indent |  numlist bullist checklist | forecolor backcolor casechange permanentpen formatpainter removeformat | pagebreak | charmap emoticons | fullscreen  preview save print | insertfile image media pageembed template link anchor codesample | a11ycheck ltr rtl | showcomments addcomment code typography",
+  "plugins":
+    "advlist autolink lists link image charmap print preview anchor searchreplace visualblocks code fullscreen insertdatetime media table powerpaste advcode help wordcount spellchecker typography",
+  "selector": "textarea",
+};
+
+SECURE_REFERRER_POLICY = 'origin'

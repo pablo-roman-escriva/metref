@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{% block title %}{% endblock %}</title>
+  {% load django_bootstrap5 %}
+  {% bootstrap_css %}
+  {% bootstrap_javascript %}
+  {% load static %}
+  <link href="{% static 'tinymce/css/prism.css' %}" rel="stylesheet">
+  <meta name="title" content="metRef">
+  <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.png' %}" >
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+  <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
+  <script src="../../static/django_select2/django_select2.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <ul class="nav bg-info">
+    <li class="nav-item">
+      <a class="nav-link link-light" href="/">HOME</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link link-light" href="/studies">STUDIES</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link link-light" href="/faq">FAQ</a>
+    </li>
+    {% if user.is_authenticated %}
+    <li class="nav-item" id ="logout_menu">
+      <form method="post" action="{% url 'logout' %}">
+        {% csrf_token %}
+        <button type="submit">LOGOUT</button>
+    </form>
+    </li>
+    {% else %}
+    <li class="nav-item">
+      <a class="nav-link link-light" href="/accounts/login">LOGIN</a>
+    </li>
+    {% endif %}
+  </ul>
+  <div id="page_content">
+  {% block content %}
+  {% endblock %}
+  </div>
+</div>
+</body>
+<script src="{% static 'tinymce/js/prism.js' %}"></script>
+</html>

@@ -1,0 +1,1156 @@
+[2024-08-23 22:50:15,599: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2024-08-23 22:50:15,602: INFO/MainProcess] mingle: searching for neighbors
+[2024-08-23 22:50:16,607: INFO/MainProcess] mingle: all alone
+[2024-08-23 22:50:16,612: INFO/MainProcess] celery@pablotbc ready.
+[2024-08-23 23:22:51,039: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2024-08-23 23:22:51,041: INFO/MainProcess] mingle: searching for neighbors
+[2024-08-23 23:22:52,047: WARNING/MainProcess] /home/pablo/miniconda3/envs/metref/lib/python3.12/site-packages/celery/app/control.py:56: DuplicateNodenameWarning: Received multiple replies from node name: celery@pablotbc.
+Please make sure you give each node a unique nodename using
+the celery worker `-n` option.
+  warnings.warn(DuplicateNodenameWarning(
+
+[2024-08-23 23:22:52,047: INFO/MainProcess] mingle: all alone
+[2024-08-23 23:22:52,053: INFO/MainProcess] celery@pablotbc ready.
+[2024-08-23 23:57:00,222: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2024-08-23 23:57:00,224: INFO/MainProcess] mingle: searching for neighbors
+[2024-08-23 23:57:01,230: WARNING/MainProcess] /home/pablo/miniconda3/envs/metref/lib/python3.12/site-packages/celery/app/control.py:56: DuplicateNodenameWarning: Received multiple replies from node name: celery@pablotbc.
+Please make sure you give each node a unique nodename using
+the celery worker `-n` option.
+  warnings.warn(DuplicateNodenameWarning(
+
+[2024-08-23 23:57:01,230: INFO/MainProcess] mingle: all alone
+[2024-08-23 23:57:01,236: INFO/MainProcess] celery@pablotbc ready.
+[2024-08-24 00:03:53,527: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2024-08-24 00:03:53,529: INFO/MainProcess] mingle: searching for neighbors
+[2024-08-24 00:03:54,535: WARNING/MainProcess] /home/pablo/miniconda3/envs/metref/lib/python3.12/site-packages/celery/app/control.py:56: DuplicateNodenameWarning: Received multiple replies from node name: celery@pablotbc.
+Please make sure you give each node a unique nodename using
+the celery worker `-n` option.
+  warnings.warn(DuplicateNodenameWarning(
+
+[2024-08-24 00:03:54,535: INFO/MainProcess] mingle: all alone
+[2024-08-24 00:03:54,541: INFO/MainProcess] celery@pablotbc ready.
+[2024-08-24 07:57:23,559: INFO/MainProcess] Task celery.backend_cleanup[206b54d6-5278-44f1-acf1-785e33025c48] received
+[2024-08-24 08:00:00,002: ERROR/MainProcess] Received unregistered task of type 'task.update_db'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'task.update_db', 'id': '94f7e128-ce66-41df-a0fd-511a8cbf1c81', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '94f7e128-ce66-41df-a0fd-511a8cbf1c81', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen3655586@pablotbc', 'ignore_result': False, 'replaced_task_nesting': 0, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/home/pablo/miniconda3/envs/metref/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 659, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'task.update_db'
+[2024-08-24 10:21:31,924: INFO/MainProcess] Task studies.tasks.taxon_to_list[b6b6d25e-cd51-442b-bbcf-6c29b4bdd698] received
+[2024-08-24 10:21:31,924: INFO/MainProcess] Task studies.tasks.taxon_to_list[bd76dbe0-e6fd-40a6-953c-ea92ebd19864] received
+[2024-08-24 10:30:14,517: INFO/MainProcess] Task studies.tasks.taxon_to_list[63525fa4-b540-4b00-bf20-e474b5f40938] received
+[2024-08-24 10:30:14,518: INFO/MainProcess] Task studies.tasks.taxon_to_list[ec698195-c956-4185-9b48-4488d585a742] received
+[2024-08-24 10:34:23,919: INFO/MainProcess] Task studies.tasks.taxon_to_list[cc1d95cb-4dec-46d7-870c-e5c65c036b2d] received
+[2024-08-24 10:34:23,921: INFO/MainProcess] Task studies.tasks.taxon_to_list[42a452fd-e06f-44a5-a596-81685fb5f937] received
+[2024-08-24 10:36:40,014: INFO/MainProcess] Task studies.tasks.taxon_to_list[2daf4faf-1833-4ee2-9628-f707a17487be] received
+[2024-08-24 10:36:40,015: INFO/MainProcess] Task studies.tasks.taxon_to_list[373cd0ae-0f57-493d-b987-4ac4d19cf310] received
+[2024-08-24 10:39:03,606: INFO/MainProcess] Task studies.tasks.taxon_to_list[4a547806-b2be-4c56-b665-bdf56065b846] received
+[2024-08-24 10:39:03,608: INFO/MainProcess] Task studies.tasks.taxon_to_list[077aac04-d9ed-46a1-9a82-83fd27b1294a] received
+[2024-08-24 10:39:53,627: INFO/MainProcess] Task studies.tasks.taxon_to_list[d206f0f4-6488-46dd-8f19-f9c30677488c] received
+[2024-08-24 10:39:53,628: INFO/MainProcess] Task studies.tasks.taxon_to_list[b00f9a05-e99d-493a-8fdb-1e865f0c5f46] received
+[2024-08-24 11:08:59,435: INFO/MainProcess] Task studies.tasks.taxon_to_list[089f659c-71db-4f4e-9f9f-f7e8f4e76311] received
+[2024-08-24 11:08:59,437: INFO/MainProcess] Task studies.tasks.taxon_to_list[b49218f7-d902-4b8d-8c4b-2be7e25a16f3] received
+[2024-08-24 11:17:31,227: INFO/MainProcess] Task studies.tasks.taxon_to_list[e7cfcbbc-b036-4d5e-ad9b-ec7cb10b3180] received
+[2024-08-24 11:17:31,228: INFO/MainProcess] Task studies.tasks.taxon_to_list[8edb90fa-9691-4721-a30a-18fe7d2899f0] received
+[2024-08-24 11:18:03,458: INFO/MainProcess] Task studies.tasks.taxon_to_list[e50a90fc-c01c-460f-a783-8c75f6a3b370] received
+[2024-08-24 11:18:03,460: INFO/MainProcess] Task studies.tasks.taxon_to_list[cc5856a5-8c22-4294-ad3b-ea34461cf0f4] received
+[2024-08-24 11:18:40,638: INFO/MainProcess] Task studies.tasks.taxon_to_list[c6646234-fff3-41a9-b4b9-cb8275fbcb28] received
+[2024-08-24 11:18:40,640: INFO/MainProcess] Task studies.tasks.taxon_to_list[f5b5e562-9559-4b67-8176-459d5a6c5b80] received
+[2024-08-24 11:20:09,042: INFO/MainProcess] Task studies.tasks.taxon_to_list[e7a2b79c-767e-46bd-ade0-3f4a9eb2dc2b] received
+[2024-08-24 11:20:09,044: INFO/MainProcess] Task studies.tasks.taxon_to_list[045e204a-ec29-4397-8243-ef6ed16d5d9f] received
+[2024-08-24 11:23:14,915: INFO/MainProcess] Task studies.tasks.taxon_to_list[a4ce1491-c888-4f50-b0a8-c5edeb570e0e] received
+[2024-08-24 11:23:14,916: INFO/MainProcess] Task studies.tasks.taxon_to_list[4d2f56e0-42d4-48be-8055-692d02bb82f7] received
+[2024-08-24 11:26:00,419: INFO/MainProcess] Task studies.tasks.taxon_to_list[95f3aaed-53d1-4944-af71-acfff62d9c04] received
+[2024-08-24 11:26:00,419: INFO/MainProcess] Task studies.tasks.taxon_to_list[7d634fbd-defb-4725-bd5d-ba97a4498ba8] received
+[2024-08-24 11:28:16,876: INFO/MainProcess] Task studies.tasks.taxon_to_list[3abcda18-bb8d-4c61-8686-8b6cd0a2faab] received
+[2024-08-24 11:28:16,877: INFO/MainProcess] Task studies.tasks.taxon_to_list[c722c0a1-141f-4188-9300-805a151ef670] received
+[2024-08-24 11:32:33,105: INFO/MainProcess] Task studies.tasks.taxon_to_list[1d9c85b6-3037-4440-8657-98c9bf12e555] received
+[2024-08-24 11:32:33,106: INFO/MainProcess] Task studies.tasks.taxon_to_list[5e4916b7-759d-401e-8d84-934d2340337b] received
+[2024-08-24 11:38:48,695: INFO/MainProcess] Task studies.tasks.taxon_to_list[8336766f-406f-4fd6-bd47-bcb15da16c4b] received
+[2024-08-24 11:38:48,696: INFO/MainProcess] Task studies.tasks.taxon_to_list[2684c20f-f5e1-4a46-8641-f8e484427b15] received
+[2024-08-24 12:09:31,284: INFO/MainProcess] Task studies.tasks.taxon_to_list[b303837f-3466-43c1-bd3f-b886ca23adaa] received
+[2024-08-24 12:15:42,376: INFO/MainProcess] Task studies.tasks.taxon_to_list[73fe21d7-4c14-4662-ac21-87396b002ea3] received
+[2024-08-24 12:23:34,187: INFO/MainProcess] Task studies.tasks.taxon_to_list[a7618a06-0d1b-4d30-9945-37900bdfdfc4] received
+[2024-08-24 12:26:23,522: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2024-08-24 12:26:23,525: INFO/MainProcess] mingle: searching for neighbors
+[2024-08-24 12:26:24,531: WARNING/MainProcess] /home/pablo/miniconda3/envs/metref/lib/python3.12/site-packages/celery/app/control.py:56: DuplicateNodenameWarning: Received multiple replies from node name: celery@pablotbc.
+Please make sure you give each node a unique nodename using
+the celery worker `-n` option.
+  warnings.warn(DuplicateNodenameWarning(
+
+[2024-08-24 12:26:24,531: INFO/MainProcess] mingle: all alone
+[2024-08-24 12:26:24,536: INFO/MainProcess] celery@pablotbc ready.
+[2024-08-24 12:29:35,015: INFO/MainProcess] Task studies.tasks.taxon_to_list[494daf17-e3d6-4d7f-bca0-0bc7a441eb98] received
+[2024-08-24 12:35:15,658: INFO/MainProcess] Task studies.tasks.taxon_to_list[8742294a-620d-4013-b58c-a4cd7f90a5a5] received
+[2024-08-24 12:35:58,800: INFO/MainProcess] Task studies.tasks.taxon_to_list[7e0fca3b-55c3-4a8f-9541-53d87a0ef9d6] received
+[2024-08-24 12:35:58,801: INFO/MainProcess] Task studies.tasks.taxon_to_list[abf8932f-c436-4412-a505-6de47fcf799d] received
+[2024-08-24 12:38:13,939: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2024-08-24 12:38:13,941: INFO/MainProcess] mingle: searching for neighbors
+[2024-08-24 12:38:14,946: WARNING/MainProcess] /home/pablo/miniconda3/envs/metref/lib/python3.12/site-packages/celery/app/control.py:56: DuplicateNodenameWarning: Received multiple replies from node name: celery@pablotbc.
+Please make sure you give each node a unique nodename using
+the celery worker `-n` option.
+  warnings.warn(DuplicateNodenameWarning(
+
+[2024-08-24 12:38:14,947: INFO/MainProcess] mingle: all alone
+[2024-08-24 12:38:14,952: INFO/MainProcess] celery@pablotbc ready.
+[2024-08-24 12:38:27,209: INFO/MainProcess] Task studies.tasks.taxon_to_list[3d9638de-fc74-485c-9dd2-2e1276f95603] received
+[2024-08-24 12:38:27,211: INFO/MainProcess] Task studies.tasks.taxon_to_list[6db2f599-0d5b-4313-b5e6-75a735cc7f75] received
+[2024-08-24 12:55:26,503: INFO/MainProcess] Task studies.tasks.taxon_to_list[39ac2fe5-1286-4edd-bde5-d102818bcae9] received
+[2024-08-24 12:56:02,556: INFO/MainProcess] Task studies.tasks.taxon_to_list[87949d3c-ec8c-42ec-8ea2-c44ee99d5a40] received
+[2024-08-24 13:03:42,862: INFO/MainProcess] Task studies.tasks.taxon_to_list[566fcf45-2de5-4638-bef7-43b2d2200652] received
+[2024-08-24 13:03:55,020: INFO/MainProcess] Task studies.tasks.taxon_to_list[cdc1c84f-872e-430f-8b15-02fbf5e89c28] received
+[2024-08-24 13:03:55,022: INFO/MainProcess] Task studies.tasks.taxon_to_list[470e1f03-2c8b-4f9e-a525-6a3b1824724a] received
+[2024-08-24 13:05:50,771: INFO/MainProcess] Task studies.tasks.taxon_to_list[2adb9235-0e9d-4072-8f90-914132be613e] received
+[2024-08-24 13:05:50,772: INFO/MainProcess] Task studies.tasks.taxon_to_list[d21500bc-1acc-4e55-ae81-9c1a6df2cda8] received
+[2024-08-24 13:09:29,714: INFO/MainProcess] Task studies.tasks.taxon_to_list[cdbbf9aa-f53f-4ab6-aa22-60a7135d0b22] received
+[2024-08-24 13:09:29,714: INFO/MainProcess] Task studies.tasks.taxon_to_list[028abdc1-da68-4fad-a656-f3e1b14d38c6] received
+[2024-08-24 13:10:47,290: INFO/MainProcess] Task studies.tasks.taxon_to_list[09a93c7b-ccfe-4537-90a5-56d3553a9261] received
+[2024-08-24 13:10:47,290: INFO/MainProcess] Task studies.tasks.taxon_to_list[9b8fa4f6-ca98-430f-9b9f-e4f661ac4222] received
+[2024-08-24 13:53:17,390: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2024-08-24 13:53:17,392: INFO/MainProcess] mingle: searching for neighbors
+[2024-08-24 13:53:18,397: WARNING/MainProcess] /home/pablo/miniconda3/envs/metref/lib/python3.12/site-packages/celery/app/control.py:56: DuplicateNodenameWarning: Received multiple replies from node name: celery@pablotbc.
+Please make sure you give each node a unique nodename using
+the celery worker `-n` option.
+  warnings.warn(DuplicateNodenameWarning(
+
+[2024-08-24 13:53:18,398: INFO/MainProcess] mingle: all alone
+[2024-08-24 13:53:18,403: INFO/MainProcess] celery@pablotbc ready.
+[2024-08-24 13:55:09,721: INFO/MainProcess] Task studies.tasks.taxon_to_list[55c793a5-d11c-4ed9-b1e4-044bfd702d5d] received
+[2024-08-24 13:59:14,344: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2024-08-24 13:59:14,346: INFO/MainProcess] mingle: searching for neighbors
+[2024-08-24 13:59:15,352: WARNING/MainProcess] /home/pablo/miniconda3/envs/metref/lib/python3.12/site-packages/celery/app/control.py:56: DuplicateNodenameWarning: Received multiple replies from node name: celery@pablotbc.
+Please make sure you give each node a unique nodename using
+the celery worker `-n` option.
+  warnings.warn(DuplicateNodenameWarning(
+
+[2024-08-24 13:59:15,352: INFO/MainProcess] mingle: all alone
+[2024-08-24 13:59:15,358: INFO/MainProcess] celery@pablotbc ready.
+[2024-08-24 13:59:21,366: INFO/MainProcess] Task studies.tasks.taxon_to_list[2f9b8e08-e1e4-4737-b38b-b2e77e1c1c88] received
+[2024-08-24 14:01:39,313: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2024-08-24 14:01:39,316: INFO/MainProcess] mingle: searching for neighbors
+[2024-08-24 14:01:40,322: WARNING/MainProcess] /home/pablo/miniconda3/envs/metref/lib/python3.12/site-packages/celery/app/control.py:56: DuplicateNodenameWarning: Received multiple replies from node name: celery@pablotbc.
+Please make sure you give each node a unique nodename using
+the celery worker `-n` option.
+  warnings.warn(DuplicateNodenameWarning(
+
+[2024-08-24 14:01:40,322: INFO/MainProcess] mingle: all alone
+[2024-08-24 14:01:40,327: INFO/MainProcess] celery@pablotbc ready.
+[2024-08-24 14:03:16,324: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2024-08-24 14:03:16,326: INFO/MainProcess] mingle: searching for neighbors
+[2024-08-24 14:03:17,332: WARNING/MainProcess] /home/pablo/miniconda3/envs/metref/lib/python3.12/site-packages/celery/app/control.py:56: DuplicateNodenameWarning: Received multiple replies from node name: celery@pablotbc.
+Please make sure you give each node a unique nodename using
+the celery worker `-n` option.
+  warnings.warn(DuplicateNodenameWarning(
+
+[2024-08-24 14:03:17,332: INFO/MainProcess] mingle: all alone
+[2024-08-24 14:03:17,338: INFO/MainProcess] celery@pablotbc ready.
+[2024-08-24 14:04:16,280: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2024-08-24 14:04:16,282: INFO/MainProcess] mingle: searching for neighbors
+[2024-08-24 14:04:17,288: WARNING/MainProcess] /home/pablo/miniconda3/envs/metref/lib/python3.12/site-packages/celery/app/control.py:56: DuplicateNodenameWarning: Received multiple replies from node name: celery@pablotbc.
+Please make sure you give each node a unique nodename using
+the celery worker `-n` option.
+  warnings.warn(DuplicateNodenameWarning(
+
+[2024-08-24 14:04:17,288: INFO/MainProcess] mingle: all alone
+[2024-08-24 14:04:17,293: INFO/MainProcess] celery@pablotbc ready.
+[2024-08-24 14:05:01,507: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2024-08-24 14:05:01,508: INFO/MainProcess] mingle: searching for neighbors
+[2024-08-24 14:05:02,514: WARNING/MainProcess] /home/pablo/miniconda3/envs/metref/lib/python3.12/site-packages/celery/app/control.py:56: DuplicateNodenameWarning: Received multiple replies from node name: celery@pablotbc.
+Please make sure you give each node a unique nodename using
+the celery worker `-n` option.
+  warnings.warn(DuplicateNodenameWarning(
+
+[2024-08-24 14:05:02,514: INFO/MainProcess] mingle: all alone
+[2024-08-24 14:05:02,520: INFO/MainProcess] celery@pablotbc ready.
+[2024-08-24 14:05:17,560: INFO/MainProcess] Task studies.tasks.taxon_to_list[8a99cfb4-bd6f-4fef-9e37-dec922a8e59a] received
+[2024-08-24 14:06:21,317: INFO/MainProcess] Task studies.tasks.taxon_to_list[e582942c-7584-4f86-8faa-3a60af71636e] received
+[2024-08-24 14:06:32,352: INFO/MainProcess] Task studies.tasks.taxon_to_list[8e8ad0c1-15b0-4833-820d-94f9d90d6d56] received
+[2024-08-24 15:29:02,083: INFO/MainProcess] Task studies.tasks.taxon_to_list[f55e9720-5c98-49da-b2c2-990e35e102af] received
+[2024-08-24 15:44:25,850: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2024-08-24 15:44:25,851: INFO/MainProcess] mingle: searching for neighbors
+[2024-08-24 15:44:26,857: WARNING/MainProcess] /home/pablo/miniconda3/envs/metref/lib/python3.12/site-packages/celery/app/control.py:56: DuplicateNodenameWarning: Received multiple replies from node name: celery@pablotbc.
+Please make sure you give each node a unique nodename using
+the celery worker `-n` option.
+  warnings.warn(DuplicateNodenameWarning(
+
+[2024-08-24 15:44:26,857: INFO/MainProcess] mingle: all alone
+[2024-08-24 15:44:26,863: INFO/MainProcess] celery@pablotbc ready.
+[2024-08-24 15:44:56,867: INFO/MainProcess] Task studies.tasks.taxon_to_list[c8ecd792-db60-495c-909f-b7bc0e63f5ba] received
+[2024-08-24 15:50:11,007: INFO/MainProcess] Task studies.tasks.taxon_to_list[7f8fa2ca-8414-4cea-961d-e2e78b1670cf] received
+[2024-08-24 16:22:34,632: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2024-08-24 16:22:34,634: INFO/MainProcess] mingle: searching for neighbors
+[2024-08-24 16:22:35,639: INFO/MainProcess] mingle: all alone
+[2024-08-24 16:22:35,645: INFO/MainProcess] celery@pablotbc ready.
+[2024-08-24 16:23:19,937: INFO/MainProcess] Task studies.tasks.taxon_to_list[dc998106-a57a-47ce-a536-b939602fe9b3] received
+[2024-08-24 16:23:42,560: INFO/MainProcess] Task studies.tasks.taxon_to_list[282e8cae-f9c0-40f1-82c3-8a5bf3352a62] received
+[2024-08-24 16:23:42,560: INFO/MainProcess] Task studies.tasks.taxon_to_list[5b4ee4d0-3b45-433a-b60f-11d1895d325f] received
+[2024-08-24 16:23:42,561: INFO/MainProcess] Task studies.tasks.taxon_to_list[051a51c8-1eb2-4a42-aa58-61239a88e904] received
+[2024-08-24 16:26:35,654: INFO/MainProcess] Task studies.tasks.taxon_to_list[8978a21c-08fd-4e76-a0f8-dcfee2b5e70a] received
+[2024-08-24 16:26:35,655: INFO/MainProcess] Task studies.tasks.taxon_to_list[00486a23-7ad1-4fe9-80be-d13403f242b1] received
+[2024-08-24 16:26:35,656: INFO/MainProcess] Task studies.tasks.taxon_to_list[b4aea059-62cd-469c-9c70-ab49f0dc5fd3] received
+[2024-08-24 16:26:35,656: INFO/MainProcess] Task studies.tasks.taxon_to_list[d363742f-4a54-4af2-bd23-fd079629f0a1] received
+[2024-08-24 16:45:26,107: INFO/MainProcess] Task studies.tasks.taxon_to_list[652f4089-acc6-4f5d-b3e6-3fe5699554a3] received
+[2024-08-24 16:45:26,108: INFO/MainProcess] Task studies.tasks.taxon_to_list[838ea214-b916-4ff0-95a3-e1f004b9fd00] received
+[2024-08-24 16:46:00,267: INFO/MainProcess] Task studies.tasks.taxon_to_list[5fb3ee89-f041-44fe-b24e-3db86e3d063a] received
+[2024-08-24 16:46:00,268: INFO/MainProcess] Task studies.tasks.taxon_to_list[8900d36c-a1de-43b4-b6cb-67e55971055a] received
+[2024-08-24 16:46:53,556: INFO/MainProcess] Task studies.tasks.taxon_to_list[00c74632-5cf9-4a8e-a33f-4d5f1b90cf5b] received
+[2024-08-24 16:46:53,557: INFO/MainProcess] Task studies.tasks.taxon_to_list[8f74d4b8-02db-493f-9612-b84b06884c8f] received
+[2024-08-24 16:48:50,928: INFO/MainProcess] Task studies.tasks.taxon_to_list[d3ee4e5b-7d17-4556-9003-3226939f3281] received
+[2024-08-24 16:48:50,929: INFO/MainProcess] Task studies.tasks.taxon_to_list[4c60f139-2c07-4f96-839c-cc5eb15ab04f] received
+[2024-08-24 16:48:50,930: INFO/MainProcess] Task studies.tasks.taxon_to_list[8c7cf0dd-b5ac-4249-b51a-228b300ff3a9] received
+[2024-08-24 16:50:49,851: INFO/MainProcess] Task studies.tasks.taxon_to_list[422c9ff6-f657-4cc0-9300-46d045dc050e] received
+[2024-08-24 16:50:49,852: INFO/MainProcess] Task studies.tasks.taxon_to_list[58cd5881-27a3-41c1-bf45-4a3a25b7a131] received
+[2024-08-24 16:50:49,853: INFO/MainProcess] Task studies.tasks.taxon_to_list[116a7898-ce78-4dee-bacd-99082ce883c1] received
+[2024-08-24 16:50:49,853: INFO/MainProcess] Task studies.tasks.taxon_to_list[4147b42a-85c4-4c34-9cbd-7e86e68bac2c] received
+[2024-08-24 16:51:21,832: INFO/MainProcess] Task studies.tasks.taxon_to_list[fdd7e652-f2ec-4218-aad5-778be52979a0] received
+[2024-08-24 16:51:21,833: INFO/MainProcess] Task studies.tasks.taxon_to_list[ab83a81f-84d4-4643-a560-659080bf56c6] received
+[2024-08-24 16:52:57,118: INFO/MainProcess] Task studies.tasks.taxon_to_list[d1c98d5e-f20b-4b3b-bf1a-f39d8fcbb5cb] received
+[2024-08-24 16:52:57,119: INFO/MainProcess] Task studies.tasks.taxon_to_list[06a33856-eea6-4b19-a2c7-007ac6f9f04c] received
+[2024-08-24 16:52:57,120: INFO/MainProcess] Task studies.tasks.taxon_to_list[a01efc37-b188-4aaf-b9e4-27fe510dfec1] received
+[2024-08-24 16:54:36,293: INFO/MainProcess] Task studies.tasks.taxon_to_list[0786f32b-3362-42ad-af9f-fecc940c1985] received
+[2024-08-24 16:54:53,488: INFO/MainProcess] Task studies.tasks.taxon_to_list[436a3552-0868-4f23-89df-baa287bd0c2e] received
+[2024-08-24 16:55:27,315: INFO/MainProcess] Task studies.tasks.taxon_to_list[c6ca1b49-08d1-44da-822e-3599927307ab] received
+[2024-08-24 16:55:27,316: INFO/MainProcess] Task studies.tasks.taxon_to_list[bea6168e-5f3e-4fa1-9e9c-a46536ffa15f] received
+[2024-08-24 16:55:27,316: INFO/MainProcess] Task studies.tasks.taxon_to_list[8924b369-600e-40b2-8eee-76096f8a632a] received
+[2024-08-24 16:57:54,273: INFO/MainProcess] Task studies.tasks.taxon_to_list[dbff8906-4740-4348-b0d5-2a055aebef74] received
+[2024-08-24 16:57:54,273: INFO/MainProcess] Task studies.tasks.taxon_to_list[6c347635-bb9a-431c-bc38-aa5361270dca] received
+[2024-08-24 16:57:54,274: INFO/MainProcess] Task studies.tasks.taxon_to_list[8635e655-496f-448b-a4b1-641a8451f5ed] received
+[2024-08-24 17:04:06,576: INFO/MainProcess] Task studies.tasks.taxon_to_list[53e7624e-df37-4fef-8b3d-5d869db563cf] received
+[2024-08-24 17:04:06,577: INFO/MainProcess] Task studies.tasks.taxon_to_list[b8a1358d-42bb-4274-94ff-f793f3452146] received
+[2024-08-24 17:04:50,824: INFO/MainProcess] Task studies.tasks.taxon_to_list[b7d9c6d3-b390-4062-9ef4-40648bbdef22] received
+[2024-08-24 17:05:31,284: INFO/MainProcess] Task studies.tasks.taxon_to_list[2c735c99-ef91-4291-9bbf-608315f66661] received
+[2024-08-24 18:51:42,381: INFO/MainProcess] Task studies.tasks.taxon_to_list[9f999baa-4c0e-4fd8-bc49-4af3f6576e34] received
+[2024-08-25 00:15:00,012: ERROR/MainProcess] Received unregistered task of type 'task.empty_temp_folder_studies'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'task.empty_temp_folder_studies', 'id': 'fa91b93a-3551-41a4-8a7a-9f855789f2b0', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': 'fa91b93a-3551-41a4-8a7a-9f855789f2b0', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen3760564@pablotbc', 'ignore_result': False, 'replaced_task_nesting': 0, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/home/pablo/miniconda3/envs/metref/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 659, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'task.empty_temp_folder_studies'
+[2024-08-25 04:00:00,002: INFO/MainProcess] Task celery.backend_cleanup[8e9ff862-98cb-4ad0-998d-95878a087d13] received
+[2024-08-25 07:58:31,066: INFO/MainProcess] Task celery.backend_cleanup[b2a2d198-203e-4425-8d5b-31ffe60c9266] received
+[2024-08-25 07:58:31,086: ERROR/MainProcess] Received unregistered task of type 'task.empty_temp_folder_studies'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'task.empty_temp_folder_studies', 'id': '0db8ce0a-c290-400a-bfe8-ed9bd3d56eed', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '0db8ce0a-c290-400a-bfe8-ed9bd3d56eed', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen3938019@pablotbc', 'ignore_result': False, 'replaced_task_nesting': 0, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/home/pablo/miniconda3/envs/metref/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 659, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'task.empty_temp_folder_studies'
+[2024-08-25 07:58:38,605: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2024-08-25 07:58:38,607: INFO/MainProcess] mingle: searching for neighbors
+[2024-08-25 07:58:39,611: INFO/MainProcess] mingle: all alone
+[2024-08-25 07:58:39,618: INFO/MainProcess] celery@pablotbc ready.
+[2024-08-26 00:15:00,003: ERROR/MainProcess] Received unregistered task of type 'task.empty_temp_folder_studies'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'task.empty_temp_folder_studies', 'id': 'f2f8b1e6-83c6-4b41-97bc-a54b568f9038', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': 'f2f8b1e6-83c6-4b41-97bc-a54b568f9038', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen3938019@pablotbc', 'ignore_result': False, 'replaced_task_nesting': 0, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/home/pablo/miniconda3/envs/metref/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 659, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'task.empty_temp_folder_studies'
+[2024-08-26 01:00:00,003: ERROR/MainProcess] Received unregistered task of type 'task.update_db'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'task.update_db', 'id': 'f63f8f34-58eb-45e3-8c5d-7dbb015440ee', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': 'f63f8f34-58eb-45e3-8c5d-7dbb015440ee', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen3938019@pablotbc', 'ignore_result': False, 'replaced_task_nesting': 0, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/home/pablo/miniconda3/envs/metref/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 659, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'task.update_db'
+[2024-08-26 04:00:00,003: INFO/MainProcess] Task celery.backend_cleanup[909fd6c8-63ef-44ee-a632-4d14bc893194] received
+[2024-08-26 11:08:36,055: INFO/MainProcess] Task studies.tasks.taxon_to_list[eddfbc3a-43b3-41c9-b99e-b6b021ea2143] received
+[2024-08-26 11:08:36,056: INFO/MainProcess] Task studies.tasks.taxon_to_list[7bea806b-bc4b-45e2-bfd4-ad09fe2531c9] received
+[2024-08-26 11:08:36,057: INFO/MainProcess] Task studies.tasks.taxon_to_list[66e6d0c3-d919-4ddf-b494-51443e262849] received
+[2024-08-26 11:08:36,058: INFO/MainProcess] Task studies.tasks.taxon_to_list[d0240146-d725-49f3-b63c-3f10971dede4] received
+[2024-08-26 11:08:36,058: INFO/MainProcess] Task studies.tasks.taxon_to_list[ece42f38-1f5e-4eaf-ab41-b68d3e71f802] received
+[2024-08-26 11:08:36,059: INFO/MainProcess] Task studies.tasks.taxon_to_list[53f41a16-e98a-4f73-987b-f13f1d9d62b9] received
+[2024-08-26 12:23:33,037: INFO/MainProcess] Task celery.backend_cleanup[b6cdd884-2559-4b1e-97a5-2010741b57db] received
+[2024-08-26 12:23:33,058: ERROR/MainProcess] Received unregistered task of type 'task.update_db'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'task.update_db', 'id': '6168ee91-7679-415e-a7a0-56faedb91008', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '6168ee91-7679-415e-a7a0-56faedb91008', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen75176@pablotbc', 'ignore_result': False, 'replaced_task_nesting': 0, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/home/pablo/miniconda3/envs/metref/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 659, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'task.update_db'
+[2024-08-26 12:25:00,001: ERROR/MainProcess] Received unregistered task of type 'task.empty_temp_folder_studies'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'task.empty_temp_folder_studies', 'id': 'd6cdf994-c044-4547-8ed3-845f9d1b58df', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': 'd6cdf994-c044-4547-8ed3-845f9d1b58df', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen75176@pablotbc', 'ignore_result': False, 'replaced_task_nesting': 0, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/home/pablo/miniconda3/envs/metref/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 659, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'task.empty_temp_folder_studies'
+[2024-08-26 12:34:00,012: ERROR/MainProcess] Received unregistered task of type 'task.empty_temp_folder_studies'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'task.empty_temp_folder_studies', 'id': '2f28c6b8-ed5c-4219-9eb3-21351387097f', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '2f28c6b8-ed5c-4219-9eb3-21351387097f', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen76946@pablotbc', 'ignore_result': False, 'replaced_task_nesting': 0, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/home/pablo/miniconda3/envs/metref/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 659, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'task.empty_temp_folder_studies'
+[2024-08-26 12:36:00,013: ERROR/MainProcess] Received unregistered task of type 'task.empty_temp_folder_studies'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'task.empty_temp_folder_studies', 'id': '19796ffd-ba87-4c4f-8b4b-16bf9078de4b', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '19796ffd-ba87-4c4f-8b4b-16bf9078de4b', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen77704@pablotbc', 'ignore_result': False, 'replaced_task_nesting': 0, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/home/pablo/miniconda3/envs/metref/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 659, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'task.empty_temp_folder_studies'
+[2024-08-26 12:42:00,013: ERROR/MainProcess] Received unregistered task of type 'task.empty_temp_folder_studies'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'task.empty_temp_folder_studies', 'id': 'ff9aa5ad-2d6f-4e31-a635-31ccd2eddfac', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': 'ff9aa5ad-2d6f-4e31-a635-31ccd2eddfac', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen79000@pablotbc', 'ignore_result': False, 'replaced_task_nesting': 0, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/home/pablo/miniconda3/envs/metref/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 659, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'task.empty_temp_folder_studies'
+[2024-08-26 12:48:00,012: ERROR/MainProcess] Received unregistered task of type 'task.empty_temp_folder_studies'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'task.empty_temp_folder_studies', 'id': '1d901bd4-273f-42ec-a56d-04fdf2996259', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '1d901bd4-273f-42ec-a56d-04fdf2996259', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen80208@pablotbc', 'ignore_result': False, 'replaced_task_nesting': 0, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/home/pablo/miniconda3/envs/metref/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 659, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'task.empty_temp_folder_studies'
+[2024-08-26 12:58:57,012: ERROR/MainProcess] Received unregistered task of type 'task.empty_temp_folder_studies'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'task.empty_temp_folder_studies', 'id': 'a42fbd14-39d5-4151-a42d-b4732ce86ed4', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': 'a42fbd14-39d5-4151-a42d-b4732ce86ed4', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen82413@pablotbc', 'ignore_result': False, 'replaced_task_nesting': 0, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/home/pablo/miniconda3/envs/metref/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 659, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'task.empty_temp_folder_studies'
+[2024-08-26 13:00:00,011: ERROR/MainProcess] Received unregistered task of type 'task.empty_temp_folder_studies'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'task.empty_temp_folder_studies', 'id': 'cc0a51a2-ef21-4f40-bef4-a1021303c4f7', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': 'cc0a51a2-ef21-4f40-bef4-a1021303c4f7', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen82652@pablotbc', 'ignore_result': False, 'replaced_task_nesting': 0, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/home/pablo/miniconda3/envs/metref/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 659, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'task.empty_temp_folder_studies'
+[2024-08-26 13:06:00,012: ERROR/MainProcess] Received unregistered task of type 'task.empty_temp_folder_studies'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'task.empty_temp_folder_studies', 'id': '54c0f313-8b76-487e-bcf7-c7fa7fa50501', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '54c0f313-8b76-487e-bcf7-c7fa7fa50501', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen84018@pablotbc', 'ignore_result': False, 'replaced_task_nesting': 0, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/home/pablo/miniconda3/envs/metref/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 659, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'task.empty_temp_folder_studies'
+[2024-08-26 13:12:25,769: ERROR/MainProcess] Received unregistered task of type 'task.empty_temp_folder_studies'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'task.empty_temp_folder_studies', 'id': 'e9279787-c726-4125-9895-b2f0df7ea802', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': 'e9279787-c726-4125-9895-b2f0df7ea802', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen85497@pablotbc', 'ignore_result': False, 'replaced_task_nesting': 0, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/home/pablo/miniconda3/envs/metref/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 659, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'task.empty_temp_folder_studies'
+[2024-08-26 13:14:50,439: ERROR/MainProcess] Received unregistered task of type 'task.empty_temp_folder_studies'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'task.empty_temp_folder_studies', 'id': '3dfcb8f1-2dfc-445a-ad26-edccde291fb9', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '3dfcb8f1-2dfc-445a-ad26-edccde291fb9', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen86014@pablotbc', 'ignore_result': False, 'replaced_task_nesting': 0, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/home/pablo/miniconda3/envs/metref/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 659, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'task.empty_temp_folder_studies'
+[2024-08-26 16:31:08,641: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2024-08-26 16:31:08,643: INFO/MainProcess] mingle: searching for neighbors
+[2024-08-26 16:31:09,647: INFO/MainProcess] mingle: all alone
+[2024-08-26 16:31:09,654: INFO/MainProcess] celery@pablotbc ready.
+[2024-08-26 16:32:58,853: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2024-08-26 16:32:58,856: INFO/MainProcess] mingle: searching for neighbors
+[2024-08-26 16:32:59,861: INFO/MainProcess] mingle: all alone
+[2024-08-26 16:32:59,867: INFO/MainProcess] celery@pablotbc ready.
+[2024-08-26 16:33:07,760: ERROR/MainProcess] Received unregistered task of type 'task.empty_temp_folder_studies'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'task.empty_temp_folder_studies', 'id': 'cb668a33-f4aa-4e09-af2b-fb76c811ee99', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': 'cb668a33-f4aa-4e09-af2b-fb76c811ee99', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen127059@pablotbc', 'ignore_result': False, 'replaced_task_nesting': 0, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/home/pablo/miniconda3/envs/metref/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 659, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'task.empty_temp_folder_studies'
+[2024-08-26 16:36:03,626: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2024-08-26 16:36:03,628: INFO/MainProcess] mingle: searching for neighbors
+[2024-08-26 16:36:04,633: INFO/MainProcess] mingle: all alone
+[2024-08-26 16:36:04,638: INFO/MainProcess] celery@pablotbc ready.
+[2024-08-26 16:45:45,078: WARNING/MainProcess] consumer: Connection to broker lost. Trying to re-establish the connection...
+Traceback (most recent call last):
+  File "/home/pablo/miniconda3/envs/metref/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 340, in start
+    blueprint.start(self)
+  File "/home/pablo/miniconda3/envs/metref/lib/python3.12/site-packages/celery/bootsteps.py", line 116, in start
+    step.start(parent)
+  File "/home/pablo/miniconda3/envs/metref/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 746, in start
+    c.loop(*c.loop_args())
+  File "/home/pablo/miniconda3/envs/metref/lib/python3.12/site-packages/celery/worker/loops.py", line 97, in asynloop
+    next(loop)
+  File "/home/pablo/miniconda3/envs/metref/lib/python3.12/site-packages/kombu/asynchronous/hub.py", line 373, in create_loop
+    cb(*cbargs)
+  File "/home/pablo/miniconda3/envs/metref/lib/python3.12/site-packages/kombu/transport/redis.py", line 1352, in on_readable
+    self.cycle.on_readable(fileno)
+  File "/home/pablo/miniconda3/envs/metref/lib/python3.12/site-packages/kombu/transport/redis.py", line 569, in on_readable
+    chan.handlers[type]()
+  File "/home/pablo/miniconda3/envs/metref/lib/python3.12/site-packages/kombu/transport/redis.py", line 918, in _receive
+    ret.append(self._receive_one(c))
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/home/pablo/miniconda3/envs/metref/lib/python3.12/site-packages/kombu/transport/redis.py", line 928, in _receive_one
+    response = c.parse_response()
+               ^^^^^^^^^^^^^^^^^^
+  File "/home/pablo/miniconda3/envs/metref/lib/python3.12/site-packages/redis/client.py", line 840, in parse_response
+    response = self._execute(conn, try_read)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pablo/miniconda3/envs/metref/lib/python3.12/site-packages/redis/client.py", line 816, in _execute
+    return conn.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pablo/miniconda3/envs/metref/lib/python3.12/site-packages/redis/retry.py", line 65, in call_with_retry
+    fail(error)
+  File "/home/pablo/miniconda3/envs/metref/lib/python3.12/site-packages/redis/client.py", line 818, in <lambda>
+    lambda error: self._disconnect_raise_connect(conn, error),
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pablo/miniconda3/envs/metref/lib/python3.12/site-packages/redis/client.py", line 805, in _disconnect_raise_connect
+    raise error
+  File "/home/pablo/miniconda3/envs/metref/lib/python3.12/site-packages/redis/retry.py", line 62, in call_with_retry
+    return do()
+           ^^^^
+  File "/home/pablo/miniconda3/envs/metref/lib/python3.12/site-packages/redis/client.py", line 817, in <lambda>
+    lambda: command(*args, **kwargs),
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pablo/miniconda3/envs/metref/lib/python3.12/site-packages/redis/client.py", line 838, in try_read
+    return conn.read_response(disconnect_on_error=False, push_request=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pablo/miniconda3/envs/metref/lib/python3.12/site-packages/redis/connection.py", line 512, in read_response
+    response = self._parser.read_response(disable_decoding=disable_decoding)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pablo/miniconda3/envs/metref/lib/python3.12/site-packages/redis/_parsers/resp2.py", line 15, in read_response
+    result = self._read_response(disable_decoding=disable_decoding)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pablo/miniconda3/envs/metref/lib/python3.12/site-packages/redis/_parsers/resp2.py", line 25, in _read_response
+    raw = self._buffer.readline()
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pablo/miniconda3/envs/metref/lib/python3.12/site-packages/redis/_parsers/socket.py", line 115, in readline
+    self._read_from_socket()
+  File "/home/pablo/miniconda3/envs/metref/lib/python3.12/site-packages/redis/_parsers/socket.py", line 68, in _read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+[2024-08-26 16:45:45,085: WARNING/MainProcess] /home/pablo/miniconda3/envs/metref/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:391: CPendingDeprecationWarning: 
+In Celery 5.1 we introduced an optional breaking change which
+on connection loss cancels all currently executed tasks with late acknowledgement enabled.
+These tasks cannot be acknowledged as the connection is gone, and the tasks are automatically redelivered
+back to the queue. You can enable this behavior using the worker_cancel_long_running_tasks_on_connection_loss
+setting. In Celery 5.1 it is set to False by default. The setting will be set to True by default in Celery 6.0.
+
+  warnings.warn(CANCEL_TASKS_BY_DEFAULT, CPendingDeprecationWarning)
+
+[2024-08-26 16:45:45,087: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379/0: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 2.00 seconds... (1/100)
+
+[2024-08-26 16:45:47,088: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379/0: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 4.00 seconds... (2/100)
+
+[2024-08-26 16:45:51,090: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379/0: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 6.00 seconds... (3/100)
+
+[2024-08-26 16:45:57,094: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2024-08-26 16:45:57,096: INFO/MainProcess] mingle: searching for neighbors
+[2024-08-26 16:45:58,099: INFO/MainProcess] mingle: all alone
+[2024-08-26 16:46:09,001: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2024-08-26 16:46:09,003: INFO/MainProcess] mingle: searching for neighbors
+[2024-08-26 16:46:10,008: INFO/MainProcess] mingle: all alone
+[2024-08-26 16:46:10,014: INFO/MainProcess] celery@pablotbc ready.
+[2024-08-26 16:50:32,446: INFO/MainProcess] Connected to redis://localhost:6379//
+[2024-08-26 16:50:32,447: INFO/MainProcess] mingle: searching for neighbors
+[2024-08-26 16:50:33,452: INFO/MainProcess] mingle: all alone
+[2024-08-26 16:50:33,458: INFO/MainProcess] celery@pablotbc ready.
+[2024-08-26 17:01:28,093: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
+[2024-08-26 17:01:28,096: INFO/MainProcess] mingle: searching for neighbors
+[2024-08-26 17:01:29,100: INFO/MainProcess] mingle: all alone
+[2024-08-26 17:01:29,105: INFO/MainProcess] celery@pablotbc ready.
+[2024-08-26 17:08:19,285: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
+[2024-08-26 17:08:19,287: INFO/MainProcess] mingle: searching for neighbors
+[2024-08-26 17:08:20,292: INFO/MainProcess] mingle: all alone
+[2024-08-26 17:08:20,297: INFO/MainProcess] celery@pablotbc ready.
+[2024-08-26 17:13:47,881: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
+[2024-08-26 17:13:47,882: INFO/MainProcess] mingle: searching for neighbors
+[2024-08-26 17:13:48,887: INFO/MainProcess] mingle: all alone
+[2024-08-26 17:13:48,893: INFO/MainProcess] celery@pablotbc ready.
+[2024-08-26 17:19:02,049: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
+[2024-08-26 17:19:02,051: INFO/MainProcess] mingle: searching for neighbors
+[2024-08-26 17:19:03,056: INFO/MainProcess] mingle: all alone
+[2024-08-26 17:19:03,060: INFO/MainProcess] celery@pablotbc ready.
+[2024-08-26 17:19:05,247: ERROR/MainProcess] Received unregistered task of type 'task.empty_temp_folder_studies'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'task.empty_temp_folder_studies', 'id': '9158f43f-ae0a-48d8-b829-98d87e1b326d', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '9158f43f-ae0a-48d8-b829-98d87e1b326d', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen136550@pablotbc', 'ignore_result': False, 'replaced_task_nesting': 0, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/home/pablo/miniconda3/envs/metref/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 659, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'task.empty_temp_folder_studies'
+[2024-08-26 17:24:50,700: ERROR/MainProcess] Received unregistered task of type 'task.empty_temp_folder_studies'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'task.empty_temp_folder_studies', 'id': 'bb667c90-4279-4b77-ad3e-979e063bd23b', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': 'bb667c90-4279-4b77-ad3e-979e063bd23b', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen137694@pablotbc', 'ignore_result': False, 'replaced_task_nesting': 0, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/home/pablo/miniconda3/envs/metref/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 659, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'task.empty_temp_folder_studies'
+[2024-08-26 17:24:55,934: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
+[2024-08-26 17:24:55,936: INFO/MainProcess] mingle: searching for neighbors
+[2024-08-26 17:24:56,940: INFO/MainProcess] mingle: all alone
+[2024-08-26 17:24:56,946: INFO/MainProcess] celery@pablotbc ready.
+[2024-08-26 17:25:02,790: ERROR/MainProcess] Received unregistered task of type 'task.empty_temp_folder_studies'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'task.empty_temp_folder_studies', 'id': '653ad29f-c6d0-4a81-a522-e0cc0062a1d9', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '653ad29f-c6d0-4a81-a522-e0cc0062a1d9', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen137831@pablotbc', 'ignore_result': False, 'replaced_task_nesting': 0, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/home/pablo/miniconda3/envs/metref/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 659, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'task.empty_temp_folder_studies'
+[2024-08-26 17:25:08,488: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
+[2024-08-26 17:25:08,489: INFO/MainProcess] mingle: searching for neighbors
+[2024-08-26 17:25:09,494: INFO/MainProcess] mingle: all alone
+[2024-08-26 17:25:09,500: INFO/MainProcess] celery@pablotbc ready.
+[2024-08-26 17:26:01,290: ERROR/MainProcess] Received unregistered task of type 'task.empty_temp_folder_studies'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'task.empty_temp_folder_studies', 'id': '59c7e39b-4137-4402-83a6-3fb4c756f6db', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '59c7e39b-4137-4402-83a6-3fb4c756f6db', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen138137@pablotbc', 'ignore_result': False, 'replaced_task_nesting': 0, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/home/pablo/miniconda3/envs/metref/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 659, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'task.empty_temp_folder_studies'
+[2024-08-26 17:26:07,578: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
+[2024-08-26 17:26:07,579: INFO/MainProcess] mingle: searching for neighbors
+[2024-08-26 17:26:08,584: INFO/MainProcess] mingle: all alone
+[2024-08-26 17:26:08,590: INFO/MainProcess] celery@pablotbc ready.
+[2024-08-26 17:26:35,194: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
+[2024-08-26 17:26:35,196: INFO/MainProcess] mingle: searching for neighbors
+[2024-08-26 17:26:36,200: INFO/MainProcess] mingle: all alone
+[2024-08-26 17:26:36,206: INFO/MainProcess] celery@pablotbc ready.
+[2024-08-26 17:27:00,013: ERROR/MainProcess] Received unregistered task of type 'task.empty_temp_folder_studies'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'task.empty_temp_folder_studies', 'id': 'bbc4cecc-bcc5-4567-93f8-225e1f2ec0ae', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': 'bbc4cecc-bcc5-4567-93f8-225e1f2ec0ae', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen138387@pablotbc', 'ignore_result': False, 'replaced_task_nesting': 0, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/home/pablo/miniconda3/envs/metref/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 659, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'task.empty_temp_folder_studies'
+[2024-08-26 17:37:57,282: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
+[2024-08-26 17:37:57,284: INFO/MainProcess] mingle: searching for neighbors
+[2024-08-26 17:37:58,288: INFO/MainProcess] mingle: all alone
+[2024-08-26 17:37:58,294: INFO/MainProcess] celery@pablotbc ready.
+[2024-08-26 17:38:01,289: ERROR/MainProcess] Received unregistered task of type 'task.empty_temp_folder_studies'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'task.empty_temp_folder_studies', 'id': '361c3a7c-fde4-47ef-907d-f109d691da93', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '361c3a7c-fde4-47ef-907d-f109d691da93', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen140662@pablotbc', 'ignore_result': False, 'replaced_task_nesting': 0, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/home/pablo/miniconda3/envs/metref/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 659, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'task.empty_temp_folder_studies'
+[2024-08-26 17:39:38,235: ERROR/MainProcess] Received unregistered task of type 'task.empty_temp_folder_studies'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'task.empty_temp_folder_studies', 'id': '892f1442-9512-4624-8d96-54c8e307b3ec', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '892f1442-9512-4624-8d96-54c8e307b3ec', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen141163@pablotbc', 'ignore_result': False, 'replaced_task_nesting': 0, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/home/pablo/miniconda3/envs/metref/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 659, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'task.empty_temp_folder_studies'
+[2024-08-26 17:39:42,931: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
+[2024-08-26 17:39:42,932: INFO/MainProcess] mingle: searching for neighbors
+[2024-08-26 17:39:43,936: INFO/MainProcess] mingle: all alone
+[2024-08-26 17:39:43,942: INFO/MainProcess] celery@pablotbc ready.
+[2024-08-26 17:42:01,593: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
+[2024-08-26 17:42:01,596: INFO/MainProcess] mingle: searching for neighbors
+[2024-08-26 17:42:02,600: INFO/MainProcess] mingle: all alone
+[2024-08-26 17:42:02,605: INFO/MainProcess] celery@pablotbc ready.
+[2024-08-26 17:42:02,607: ERROR/MainProcess] Received unregistered task of type 'task.empty_temp_folder_studies'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'task.empty_temp_folder_studies', 'id': 'fee3283f-8524-4cbc-b7d3-9723f6005f32', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': 'fee3283f-8524-4cbc-b7d3-9723f6005f32', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen141770@pablotbc', 'ignore_result': False, 'replaced_task_nesting': 0, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/home/pablo/miniconda3/envs/metref/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 659, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'task.empty_temp_folder_studies'
+[2024-08-26 17:42:31,968: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
+[2024-08-26 17:42:31,969: INFO/MainProcess] mingle: searching for neighbors
+[2024-08-26 17:42:32,974: INFO/MainProcess] mingle: all alone
+[2024-08-26 17:42:32,980: INFO/MainProcess] celery@pablotbc ready.
+[2024-08-26 17:42:33,839: ERROR/MainProcess] Received unregistered task of type 'task.empty_temp_folder_studies'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'task.empty_temp_folder_studies', 'id': '4da4d562-e2f9-4fe0-9886-ea5635e8a7b2', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '4da4d562-e2f9-4fe0-9886-ea5635e8a7b2', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen142041@pablotbc', 'ignore_result': False, 'replaced_task_nesting': 0, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/home/pablo/miniconda3/envs/metref/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 659, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'task.empty_temp_folder_studies'
+[2024-08-26 17:42:38,499: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
+[2024-08-26 17:42:38,502: INFO/MainProcess] mingle: searching for neighbors
+[2024-08-26 17:42:39,506: INFO/MainProcess] mingle: all alone
+[2024-08-26 17:42:39,510: INFO/MainProcess] celery@pablotbc ready.
+[2024-08-26 17:43:29,099: ERROR/MainProcess] Received unregistered task of type 'task.empty_temp_folder_studies'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'task.empty_temp_folder_studies', 'id': '8e26eb4b-d837-432f-a6a1-51da1b54414d', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '8e26eb4b-d837-432f-a6a1-51da1b54414d', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen142354@pablotbc', 'ignore_result': False, 'replaced_task_nesting': 0, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/home/pablo/miniconda3/envs/metref/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 659, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'task.empty_temp_folder_studies'
+[2024-08-26 17:43:32,686: ERROR/MainProcess] Received unregistered task of type 'task.empty_temp_folder_studies'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'task.empty_temp_folder_studies', 'id': '8c4eb1ac-2120-47a3-8b4b-140487308959', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '8c4eb1ac-2120-47a3-8b4b-140487308959', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen142401@pablotbc', 'ignore_result': False, 'replaced_task_nesting': 0, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/home/pablo/miniconda3/envs/metref/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 659, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'task.empty_temp_folder_studies'
+[2024-08-26 17:44:11,890: ERROR/MainProcess] Received unregistered task of type 'task.empty_temp_folder_studies'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'task.empty_temp_folder_studies', 'id': 'd56e9f9d-0585-42ff-b098-ce07612f6036', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': 'd56e9f9d-0585-42ff-b098-ce07612f6036', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen142597@pablotbc', 'ignore_result': False, 'replaced_task_nesting': 0, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/home/pablo/miniconda3/envs/metref/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 659, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'task.empty_temp_folder_studies'
+[2024-08-26 17:44:18,985: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
+[2024-08-26 17:44:18,986: INFO/MainProcess] mingle: searching for neighbors
+[2024-08-26 17:44:19,991: INFO/MainProcess] mingle: all alone
+[2024-08-26 17:44:19,996: INFO/MainProcess] celery@pablotbc ready.
+[2024-08-26 17:45:01,027: WARNING/MainProcess] Requeuing undeliverable message for queue 'celery': No consumers.
+[2024-08-26 17:45:02,879: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
+[2024-08-26 17:45:02,881: INFO/MainProcess] mingle: searching for neighbors
+[2024-08-26 17:45:03,886: INFO/MainProcess] mingle: all alone
+[2024-08-26 17:45:03,891: INFO/MainProcess] celery@pablotbc ready.
+[2024-08-26 17:45:03,893: ERROR/MainProcess] Received unregistered task of type 'task.empty_temp_folder_studies'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'task.empty_temp_folder_studies', 'id': 'e4b80dab-b5a2-47eb-bf84-5c8facf69f53', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': 'e4b80dab-b5a2-47eb-bf84-5c8facf69f53', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen142846@pablotbc', 'ignore_result': False, 'replaced_task_nesting': 0, 'stamped_headers': None, 'stamps': {}, 'redelivered': True}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery', 'redelivered': True}
+Traceback (most recent call last):
+  File "/home/pablo/miniconda3/envs/metref/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 659, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'task.empty_temp_folder_studies'
+[2024-08-26 17:46:16,126: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
+[2024-08-26 17:46:16,128: INFO/MainProcess] mingle: searching for neighbors
+[2024-08-26 17:46:17,132: INFO/MainProcess] mingle: all alone
+[2024-08-26 17:46:17,138: INFO/MainProcess] celery@pablotbc ready.
+[2024-08-26 17:47:00,014: ERROR/MainProcess] Received unregistered task of type 'task.empty_temp_folder_studies'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'task.empty_temp_folder_studies', 'id': 'b78f460c-27d3-4042-b969-654751c02cf9', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': 'b78f460c-27d3-4042-b969-654751c02cf9', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen143208@pablotbc', 'ignore_result': False, 'replaced_task_nesting': 0, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/home/pablo/miniconda3/envs/metref/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 659, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'task.empty_temp_folder_studies'
+[2024-08-26 17:51:26,199: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
+[2024-08-26 17:51:26,202: INFO/MainProcess] mingle: searching for neighbors
+[2024-08-26 17:51:27,206: INFO/MainProcess] mingle: all alone
+[2024-08-26 17:51:27,211: INFO/MainProcess] celery@pablotbc ready.
+[2024-08-26 17:52:00,014: INFO/MainProcess] Task metref.celery.empty_temp_folder_studies[1bf80e82-80d0-43bf-9547-9267707dc418] received
+[2024-08-26 17:53:36,653: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
+[2024-08-26 17:53:36,655: INFO/MainProcess] mingle: searching for neighbors
+[2024-08-26 17:53:37,660: INFO/MainProcess] mingle: all alone
+[2024-08-26 17:53:37,664: INFO/MainProcess] celery@pablotbc ready.
+[2024-08-26 17:54:00,017: INFO/MainProcess] Task metref.celery.empty_temp_folder_studies[10aa540b-5f09-4449-97c9-1b0617a7ae61] received
+[2024-08-26 17:56:36,635: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
+[2024-08-26 17:56:36,637: INFO/MainProcess] mingle: searching for neighbors
+[2024-08-26 17:56:37,642: INFO/MainProcess] mingle: all alone
+[2024-08-26 17:56:37,647: INFO/MainProcess] celery@pablotbc ready.
+[2024-08-27 00:15:00,014: INFO/MainProcess] Task metref.celery.empty_temp_folder_studies[bdf1b4a3-0b6c-4c27-a6d2-44df4f106a7c] received
+[2024-08-27 04:00:00,002: INFO/MainProcess] Task celery.backend_cleanup[f6764532-d599-40bc-9701-7e65ec3a1f3c] received
+[2024-08-28 00:15:00,003: INFO/MainProcess] Task metref.celery.empty_temp_folder_studies[8d472e64-4c21-4006-9960-ad41afc5cfbd] received
+[2024-08-28 04:00:00,002: INFO/MainProcess] Task celery.backend_cleanup[ac087b9c-0518-43c1-b032-0d7c2ec22443] received
+[2024-08-29 00:15:00,002: INFO/MainProcess] Task metref.celery.empty_temp_folder_studies[4e0d1a26-7435-4424-a7c4-3cefcd0b0036] received
+[2024-08-29 04:00:00,002: INFO/MainProcess] Task celery.backend_cleanup[aabbb61d-90e0-43a2-a3d4-87073f0bc645] received
+[2024-08-30 00:15:00,003: INFO/MainProcess] Task metref.celery.empty_temp_folder_studies[672792ae-32c1-4527-8310-12efcb877d3e] received
+[2024-08-30 04:00:00,002: INFO/MainProcess] Task celery.backend_cleanup[60e15f2a-26fd-4548-8fa6-4843ef0501f4] received
+[2024-08-30 08:10:55,504: INFO/MainProcess] Task studies.tasks.taxon_to_list[567e21fb-3db3-4a7c-b916-9b081f8874ba] received
+[2024-08-30 08:10:55,505: INFO/MainProcess] Task studies.tasks.taxon_to_list[2ab1c240-702a-4a49-940c-28c4573b16e4] received
+[2024-08-30 08:10:55,506: INFO/MainProcess] Task studies.tasks.taxon_to_list[a66e7b87-feae-404e-bbfe-f7a12eb508b1] received
+[2024-08-30 08:18:07,038: INFO/MainProcess] Task studies.tasks.taxon_to_list[adc8a50d-4653-4dc8-b7f6-82f1cb014b72] received
+[2024-08-30 08:18:07,038: INFO/MainProcess] Task studies.tasks.taxon_to_list[a6e50f31-d917-409e-96ca-4c9d2233bb1f] received
+[2024-08-30 08:18:07,039: INFO/MainProcess] Task studies.tasks.taxon_to_list[0d651d02-a574-4731-bc38-215479bfe165] received
+[2024-08-31 00:15:00,002: INFO/MainProcess] Task metref.celery.empty_temp_folder_studies[7c8d9573-912f-4d1d-ab4e-043ed8229636] received
+[2024-08-31 04:00:00,003: INFO/MainProcess] Task celery.backend_cleanup[76ae1918-b3b0-4ec2-8677-a94edfbfe592] received
+[2024-09-01 00:15:00,002: INFO/MainProcess] Task metref.celery.empty_temp_folder_studies[ad231998-2852-49ae-bf2e-865dd370b9d5] received
+[2024-09-01 04:00:00,002: INFO/MainProcess] Task celery.backend_cleanup[91f35c19-e86c-444e-870d-47992ce61258] received
+[2024-09-02 00:15:00,011: INFO/MainProcess] Task metref.celery.empty_temp_folder_studies[8c44610d-ec7d-4b07-9db4-ff4882470a92] received
+[2024-09-02 04:00:00,002: INFO/MainProcess] Task celery.backend_cleanup[fd6c92ba-42b7-4202-b090-0a9f583b8880] received
+[2024-09-03 00:15:00,002: INFO/MainProcess] Task metref.celery.empty_temp_folder_studies[c274bf2c-9d00-4e5c-8d73-a81512a172ad] received
+[2024-09-03 04:00:00,002: INFO/MainProcess] Task celery.backend_cleanup[46c75a8c-4ad2-4df3-ae64-8f707ab73544] received
+[2024-09-03 10:22:36,444: INFO/MainProcess] Task studies.tasks.taxon_to_list[ff7b875a-fdd5-4436-8bcc-a382e1133c98] received
+[2024-09-03 10:22:36,445: INFO/MainProcess] Task studies.tasks.taxon_to_list[d5e7f977-1c1a-4ee9-a733-2da8ef9f3333] received
+[2024-09-03 10:22:36,446: INFO/MainProcess] Task studies.tasks.taxon_to_list[fd7fc380-8320-434a-9f37-d6b97ea7cee5] received
+[2024-09-04 00:15:00,002: INFO/MainProcess] Task metref.celery.empty_temp_folder_studies[9843fd54-00b7-486f-9045-3f81f379fa5e] received
+[2024-09-04 04:00:00,002: INFO/MainProcess] Task celery.backend_cleanup[0fe6d524-c80a-423f-9b92-25db636e5e79] received
+[2024-09-04 15:15:07,315: INFO/MainProcess] Task studies.tasks.taxon_to_list[a539c489-adad-4ecb-9527-4732cfa8ca1b] received
+[2024-09-04 15:47:04,152: INFO/MainProcess] Task studies.tasks.taxon_to_list[18df7a7b-c959-439d-842d-7cb2774f0b39] received
+[2024-09-04 15:47:04,153: INFO/MainProcess] Task studies.tasks.taxon_to_list[bc6b55b6-6b76-47c9-b6fd-d64ce4ec1537] received
+[2024-09-04 15:47:04,154: INFO/MainProcess] Task studies.tasks.taxon_to_list[ac0ef82e-3919-4914-be2d-ac31fe0fceda] received
+[2024-09-04 15:51:52,960: INFO/MainProcess] Task studies.tasks.taxon_to_list[28dd5e52-6129-4154-be5e-5bf0fbeabc14] received
+[2024-09-04 15:51:52,961: INFO/MainProcess] Task studies.tasks.taxon_to_list[cc19767e-f36e-4761-99fc-bf5be098357a] received
+[2024-09-05 00:15:00,002: INFO/MainProcess] Task metref.celery.empty_temp_folder_studies[660dcecf-515b-420c-a0c5-0ef330704e42] received
+[2024-09-05 04:00:00,002: INFO/MainProcess] Task celery.backend_cleanup[c4fd726b-2e9e-40d2-b472-b3b57855ded8] received

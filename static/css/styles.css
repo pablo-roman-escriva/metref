@@ -1,0 +1,182 @@
+.bg-info {
+    background-color: darkgreen !important;
+}
+.messages {
+    list-style-type: none;
+    margin: 10px 0 10px 0 ;
+    padding: 0;
+}
+.messages .info {
+    background-color: khaki;
+    list-style-type: none;
+    padding: 10px;
+    border-width: 1px;
+    border-color:darkgoldenrod;
+    border-style: solid;
+}
+
+form.login {
+    margin: 10px 0;
+}
+
+h1, .title_form_login {
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+form.login div label {
+    width: 80px;
+}
+form.login div {
+    margin-bottom:10px;
+}
+form button, .link_new_study, #study_form button, #delete_study button {
+    background-color: rgb(198, 234, 198);
+    border-color: darkgreen;
+    border-radius: 10px;
+    border-style: solid;
+    display: block;
+    float: left;
+    color: #000;
+    padding:5px 10px;
+    margin-right:10px;
+}
+.link_new_study a {
+    padding: 0 10px;
+    text-decoration: none;
+    color: #000;
+}
+form button:hover, .link_new_study:hover, #study_form button:hover, #delete_study button:hover {
+    background-color: rgb(180, 214, 180);
+    border-color: darkgreen;
+    border-radius: 10px;
+    border-style: solid;
+}
+#page_content {
+    margin-top:20px;
+}
+form .errorlist {
+    list-style-type: none;
+    margin: 10px 0;
+    background-color: rgb(255, 196, 196);
+    padding: 10px 10px 0 10px;
+    border-width: 1px;
+    border-color:#890c0c;
+    border-style: solid;
+} 
+form .errorlist li {
+    margin: 0 0 10px 0;
+    padding: 0;
+}
+.nav #logout_menu button {
+    display: block;
+    padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+    font-size: var(--bs-nav-link-font-size);
+    font-weight: var(--bs-nav-link-font-weight);
+    color: var(--bs-nav-link-color);
+    text-decoration: none;
+    background: 0 0;
+    border: 0;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+    color: RGBA(var(--bs-light-rgb), var(--bs-link-opacity, 1)) !important;
+    -webkit-text-decoration-color: RGBA(var(--bs-light-rgb), var(--bs-link-underline-opacity, 1)) !important;
+    text-decoration-color: RGBA(var(--bs-light-rgb), var(--bs-link-underline-opacity, 1)) !important;
+}
+#list_studies {
+    display: block;
+    clear: both;
+    padding-top: 20px;
+}
+.list_studies_item_remove {
+    display: block;
+    float:left;
+    clear:right;
+    margin-left: 10px;
+}
+.list_studies_item {
+    display: block;
+    overflow: hidden;
+    background-color: rgb(247, 255, 247);
+    border-color:rgb(28, 125, 28);
+    border-style: solid;
+    border-width: 1px;
+    padding-bottom: 20px;
+    margin-bottom:20px;
+}
+#list_studies ul {
+    margin:0;
+    list-style: none;
+    padding: 0;
+}
+#list_studies ul li {
+    margin:0;
+    list-style: none;
+}
+.list_studies_item_edit {
+    margin-left: 10px;
+    display: block;
+    float: left;
+}
+.list_studies_item_view {
+    clear: left;
+    display: block;
+    float: left;
+}
+.list_studies_item_title {
+    background-color: rgb(0, 128, 0);
+    color: #FFF;
+    padding: 5px 10px;
+}
+.list_studies_item_taxa {
+    margin-bottom:10px;
+}
+.list_studies_item_taxon {
+    font-size:0.9em;
+}
+.list_studies_item_content {
+    padding: 20px;
+}
+.list_studies_item_links a{
+    color:#000;
+    cursor: pointer;
+}
+.pagination {
+    text-align: center;
+    display: block;
+    font-size: 0.9em;
+    margin-bottom: 20px;
+}
+.pagination a {
+    color: #000;
+}
+#accordionStudies .accordion-button, #accordionFaq .accordion-button {
+    padding: 10px 20px !important;
+    margin: 0 0 10px 0 !important;
+    cursor: pointer;
+    background-color: #dee2e6;
+}
+#accordionStudies .accordion-body li {
+    list-style-type: none;
+}
+
+#accordionFaq .entry_title_faq {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+#accordionFaq .accordion-body ul {
+    margin-bottom: 1rem;
+}
+#buttons_study {
+    display: block;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+#buttons_study .button_study {
+    float: left;
+    margin-right: 10px;
+}
+#buttons_study .button_study a {
+    display: block;
+    cursor: pointer;
+}

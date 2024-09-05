@@ -1,0 +1,4 @@
+Usage: celery [OPTIONS] COMMAND [ARGS]...
+Try 'celery --help' for help.
+
+Error: No such option: --loglevel

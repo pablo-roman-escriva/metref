@@ -1,0 +1,36 @@
+[2024-08-24 16:23:42,660: WARNING/ForkPoolWorker-1] 0
+[2024-08-24 16:23:42,660: WARNING/ForkPoolWorker-1] 1
+[2024-08-24 16:23:42,662: INFO/ForkPoolWorker-1] Task studies.tasks.taxon_to_list[051a51c8-1eb2-4a42-aa58-61239a88e904] succeeded in 0.09946575900539756s: None
+[2024-08-24 16:26:35,751: WARNING/ForkPoolWorker-1] 0
+[2024-08-24 16:26:35,751: WARNING/ForkPoolWorker-1] 1
+[2024-08-24 16:26:35,752: INFO/ForkPoolWorker-1] Task studies.tasks.taxon_to_list[b4aea059-62cd-469c-9c70-ab49f0dc5fd3] succeeded in 0.09545392030850053s: None
+[2024-08-24 16:48:50,946: WARNING/ForkPoolWorker-1] 0
+[2024-08-24 16:48:50,946: WARNING/ForkPoolWorker-1] 1
+[2024-08-24 16:48:50,947: INFO/ForkPoolWorker-1] Task studies.tasks.taxon_to_list[8c7cf0dd-b5ac-4249-b51a-228b300ff3a9] succeeded in 0.016408554278314114s: None
+[2024-08-24 16:50:49,870: WARNING/ForkPoolWorker-1] 0
+[2024-08-24 16:50:49,870: WARNING/ForkPoolWorker-1] 1
+[2024-08-24 16:50:49,871: INFO/ForkPoolWorker-1] Task studies.tasks.taxon_to_list[116a7898-ce78-4dee-bacd-99082ce883c1] succeeded in 0.01772159058600664s: None
+[2024-08-24 16:52:57,135: WARNING/ForkPoolWorker-1] 0
+[2024-08-24 16:52:57,135: WARNING/ForkPoolWorker-1] 1
+[2024-08-24 16:52:57,136: INFO/ForkPoolWorker-1] Task studies.tasks.taxon_to_list[a01efc37-b188-4aaf-b9e4-27fe510dfec1] succeeded in 0.016234392300248146s: None
+[2024-08-24 16:55:27,413: WARNING/ForkPoolWorker-1] 0
+[2024-08-24 16:55:27,413: WARNING/ForkPoolWorker-1] 1
+[2024-08-24 16:55:27,414: INFO/ForkPoolWorker-1] Task studies.tasks.taxon_to_list[8924b369-600e-40b2-8eee-76096f8a632a] succeeded in 0.09674542117863894s: None
+[2024-08-24 16:57:58,682: WARNING/ForkPoolWorker-1] 0
+[2024-08-24 16:57:58,682: WARNING/ForkPoolWorker-1] 1
+[2024-08-24 16:57:58,684: INFO/ForkPoolWorker-1] Task studies.tasks.taxon_to_list[8635e655-496f-448b-a4b1-641a8451f5ed] succeeded in 4.409046244807541s: None
+[2024-08-26 11:08:36,079: WARNING/ForkPoolWorker-1] 0
+[2024-08-26 11:08:36,079: WARNING/ForkPoolWorker-1] 1
+[2024-08-26 11:08:36,080: INFO/ForkPoolWorker-1] Task studies.tasks.taxon_to_list[66e6d0c3-d919-4ddf-b494-51443e262849] succeeded in 0.02184594376012683s: None
+[2024-08-30 08:10:55,606: WARNING/ForkPoolWorker-1] 0
+[2024-08-30 08:10:55,606: WARNING/ForkPoolWorker-1] 1
+[2024-08-30 08:10:55,609: INFO/ForkPoolWorker-1] Task studies.tasks.taxon_to_list[a66e7b87-feae-404e-bbfe-f7a12eb508b1] succeeded in 0.10255926800891757s: None
+[2024-08-30 08:18:11,463: WARNING/ForkPoolWorker-1] 0
+[2024-08-30 08:18:11,464: WARNING/ForkPoolWorker-1] 1
+[2024-08-30 08:18:11,466: INFO/ForkPoolWorker-1] Task studies.tasks.taxon_to_list[0d651d02-a574-4731-bc38-215479bfe165] succeeded in 4.426548596005887s: None
+[2024-09-03 10:22:36,559: WARNING/ForkPoolWorker-1] 0
+[2024-09-03 10:22:36,559: WARNING/ForkPoolWorker-1] 1
+[2024-09-03 10:22:36,560: INFO/ForkPoolWorker-1] Task studies.tasks.taxon_to_list[fd7fc380-8320-434a-9f37-d6b97ea7cee5] succeeded in 0.11358590284362435s: None
+[2024-09-04 15:47:08,930: WARNING/ForkPoolWorker-1] 0
+[2024-09-04 15:47:08,930: WARNING/ForkPoolWorker-1] 1
+[2024-09-04 15:47:08,933: INFO/ForkPoolWorker-1] Task studies.tasks.taxon_to_list[ac0ef82e-3919-4914-be2d-ac31fe0fceda] succeeded in 4.778328645043075s: None

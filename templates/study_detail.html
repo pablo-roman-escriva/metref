@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block title %}metRef{% endblock %}
+{% load static %}
+{% block content %}
+<h1>{{ object.title }}</h1>
+{% if num_lists_inactive == 0 %}
+<div id="buttons_study">
+  <div class="button_study"><a href="{% url 'export-to-csv' object.id %}"><img src="{% static 'images/csv-file-icon.png' %}" title="export as csv" width="20px"/></a></div>
+  {% if num_items >= 30 %}
+    <div class="button_study"><a href="{% url 'download-analysis' object.id %}"><img src="{% static 'images/pdf-files-icon.png' %}" title="download analysis" width="20px"/></a></div>
+  {% endif %}
+</div>
+
+<div class="accordion accordion-flush" id="accordionStudies">
+{% for gl in object.genomelist_set.all %}
+  <div class="accordion-item">
+    {% with genomes=gl.genomes.all %} 
+    <h2 class="accordion-header" id="heading{{gl.id}}">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse{{gl.id}}" aria-expanded="false" aria-controls="flush-collapse{{gl.id}}">
+        {{gl.taxon.name}} ({{genomes|length}} genomes)
+      </button>
+    </h2>
+    <div id="flush-collapse{{gl.id}}" class="accordion-collapse collapse" aria-labelledby="flush-heading{{gl.id}}" data-bs-parent="#accordionStudies">
+      <div class="accordion-body">
+          {% for genome in genomes %}
+          <li>{{ genome.accession }} - {{ genome.taxon.name }}</li>
+          {% empty %}
+          <li>Genomes not found.</li>
+          {% endfor %}
+      </div>
+    </div>
+    {% endwith %}
+  </div>
+  <!-- {{ gl.taxon.name }} #{{ gl.taxon.rank }} 
+  {% with genomes=gl.genomes.all %}
+    {% if genomes %}
+      ({{ genomes|length }} genomes)
+      {% for genome in genomes %}
+        <li>{{ genome.accession }} ({{ genome.taxon.name }})</li>
+      {% empty %}
+      <li>Genomes not found.</li>
+      {% endfor %}
+    {% endif %}
+  {% endwith %} -->
+{% empty %}
+<p>The list of genomes is being generated.</p>
+{% endfor %}
+</div>
+{% else %}
+<div>The list of genomes is being generated, please refresh in a few seconds.</div>
+{% endif %}
+{% endblock %}
+  
+

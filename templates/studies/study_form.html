@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}metRef{% endblock %}
+{% block content %}
+{{ form.media.css }}
+{{StudyForm.media}}
+    <form class="pt-3" id="study_form" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">Add</button>
+        
+    </form>
+    {{ form.media.js }}
+{% endblock %}

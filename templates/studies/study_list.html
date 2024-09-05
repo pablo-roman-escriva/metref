@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block title %}metRef{% endblock %}
+{% block content %}
+<h1>Studies</h1>
+<div class="link_new_study"><a href="{% url 'study-add' %}">Add new study</a></div>
+<div id="list_studies">
+<ul>
+{% for study in page_obj %}
+    <li>
+        <div class="list_studies_item">
+            <div class="list_studies_item_title">{{ study.title }}</div>
+            <div class="list_studies_item_content">
+                <div class="list_studies_item_taxa">
+                    {% for taxon in study.taxon.all %}
+                    <div class="list_studies_item_taxon">
+                        {{ taxon.name }} #{{ taxon.rank }}
+                    </div>
+                    {% endfor %}
+                </div>
+                <div class="list_studies_item_links">
+                    <div class="list_studies_item_view"><a href="{% url 'study-detail' study.id %}">view</a></div>
+                    <div class="list_studies_item_edit"><a href="{% url 'study-update' study.id %}">edit</a></div>
+                    <div class="list_studies_item_remove"><a href="{% url 'study-delete' study.id %}">delete</a></div>
+                </div>
+            </div>
+        </div>
+    </li>
+{% empty %}
+    <li>No studies yet.</li>
+{% endfor %}
+</ul>
+</div>
+{% if is_paginated %}
+<div class="pagination">
+    <span class="step-links">
+        {% if page_obj.has_previous %}
+            <a href="?page=1">&laquo; first</a>
+            <a href="?page={{ page_obj.previous_page_number }}">previous</a>
+        {% endif %}
+
+        <span class="current">
+            {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}
+        </span>
+
+        {% if page_obj.has_next %}
+            <a href="?page={{ page_obj.next_page_number }}">next</a>
+            <a href="?page={{ page_obj.paginator.num_pages }}">last &raquo;</a>
+        {% endif %}
+    </span>
+</div>
+{% endif %}
+{% endblock %}
